@@ -2,153 +2,26 @@
 	<div class="skills">
 		<div class="my-skills">
 			<h2>{{$t('mySkills')}}</h2>
-			<div class="under-my-skills"></div>
 			<div ref="skillList" class="skills-list">
 				<ul class="hard-skills">
-					<li>
-						<p>English</p>
+					<li v-for="item in hardSkills" :key="item.id">
+						<p>{{item.name}}</p>
 						<div class="skill-content">
 							<div class="skill-empty">
-								<div class="skill-bar"></div>
+								<div :data-percent="item.percent" class="skill-bar"></div>
 							</div>
-							<div class="skill-percent">70%</div>
-						</div>
-					</li>
-					<li>
-						<p>CSS</p>
-						<div class="skill-content">
-							<div class="skill-empty">
-								<div class="skill-bar"></div>
-							</div>
-							<div class="skill-percent">80%</div>
-						</div>
-					</li>
-					<li>
-						<p>HTML</p>
-						<div class="skill-content">
-							<div class="skill-empty">
-								<div class="skill-bar"></div>
-							</div>
-							<div class="skill-percent">80%</div>
-						</div>
-					</li>
-					<li>
-						<p>JavaScript</p>
-						<div class="skill-content">
-							<div class="skill-empty">
-								<div class="skill-bar"></div>
-							</div>
-							<div class="skill-percent">65%</div>
-						</div>
-					</li>
-					<li>
-						<p>VueJs</p>
-						<div class="skill-content">
-							<div class="skill-empty">
-								<div class="skill-bar"></div>
-							</div>
-							<div class="skill-percent">65%</div>
-						</div>
-					</li>
-					<li>
-						<p>NodeJS</p>
-						<div class="skill-content">
-							<div class="skill-empty">
-								<div class="skill-bar"></div>
-							</div>
-							<div class="skill-percent">65%</div>
-						</div>
-					</li>
-					<li>
-						<p>PowerBuilder</p>
-						<div class="skill-content">
-							<div class="skill-empty">
-								<div class="skill-bar"></div>
-							</div>
-							<div class="skill-percent">95%</div>
-						</div>
-					</li>
-					<li>
-						<p>PostgreSQL</p>
-						<div class="skill-content">
-							<div class="skill-empty">
-								<div class="skill-bar"></div>
-							</div>
-							<div class="skill-percent">80%</div>
+							<div class="skill-percent">{{`${item.percent}%`}}</div>
 						</div>
 					</li>
 				</ul>
 				<ul class="soft-skills">
-					<li>
-						<p>Problem-Solving</p>
+					<li v-for="item in softSkills" :key="item.id">
+						<p>{{item.name}}</p>
 						<div class="skill-content">
 							<div class="skill-empty">
-								<div class="skill-bar"></div>
+								<div :data-percent="item.percent" class="skill-bar"></div>
 							</div>
-							<div class="skill-percent">90%</div>
-						</div>
-					</li>
-					<li>
-						<p>Work Ethic</p>
-						<div class="skill-content">
-							<div class="skill-empty">
-								<div class="skill-bar"></div>
-							</div>
-							<div class="skill-percent">100%</div>
-						</div>
-					</li>
-					<li>
-						<p>Teamwork</p>
-						<div class="skill-content">
-							<div class="skill-empty">
-								<div class="skill-bar"></div>
-							</div>
-							<div class="skill-percent">90%</div>
-						</div>
-					</li>
-					<li>
-						<p>Communication</p>
-						<div class="skill-content">
-							<div class="skill-empty">
-								<div class="skill-bar"></div>
-							</div>
-							<div class="skill-percent">90%</div>
-						</div>
-					</li>
-					<li>
-						<p>Creativity</p>
-						<div class="skill-content">
-							<div class="skill-empty">
-								<div class="skill-bar"></div>
-							</div>
-							<div class="skill-percent">90%</div>
-						</div>
-					</li>
-					<li>
-						<p>Adaptability</p>
-						<div class="skill-content">
-							<div class="skill-empty">
-								<div class="skill-bar"></div>
-							</div>
-							<div class="skill-percent">100%</div>
-						</div>
-					</li>
-					<li>
-						<p>Leadership</p>
-						<div class="skill-content">
-							<div class="skill-empty">
-								<div class="skill-bar"></div>
-							</div>
-							<div class="skill-percent">80%</div>
-						</div>
-					</li>
-					<li>
-						<p>Empathy</p>
-						<div class="skill-content">
-							<div class="skill-empty">
-								<div class="skill-bar"></div>
-							</div>
-							<div class="skill-percent">100%</div>
+							<div class="skill-percent">{{`${item.percent}%`}}</div>
 						</div>
 					</li>
 				</ul>
@@ -167,6 +40,9 @@
 		},
 		created() {
 			window.addEventListener("scroll", this.handleScroll);
+		},
+		mounted() {
+			this.fullingProgressBarSkill();
 		},
 		destroyed() {
 			window.removeEventListener("scroll", this.handleScroll);
@@ -189,7 +65,38 @@
 				if (skillTopPosition > 0 && skillBottomPosition > 0) {
 					skillList.classList.add("skill-list-animation");
 				}
+			},
+			fullingProgressBarSkill: () => {
+				const bars = Array.from(document.querySelectorAll(".skill-bar"));
+
+				bars.map(e => {
+					e.style.width = `${e.dataset.percent}%`;
+				});
 			}
+		},
+		data: () => {
+			return {
+				hardSkills: [
+					{ name: "English", id: "sk-eng", percent: 60 },
+					{ name: "CSS", id: "sk-css", percent: 80 },
+					{ name: "HTML", id: "sk-html", percent: 80 },
+					{ name: "JavaScript", id: "sk-js", percent: 65 },
+					{ name: "VueJS", id: "sk-vue", percent: 65 },
+					{ name: "NodeJS", id: "sk-node", percent: 65 },
+					{ name: "PowerBuilder", id: "sk-pb", percent: 95 },
+					{ name: "PostgreSQL", id: "sk-pg", percent: 80 }
+				],
+				softSkills: [
+					{ name: "Problem-Solving", id: "sk-ps", percent: 90 },
+					{ name: "Work-Ethic", id: "sk-we", percent: 100 },
+					{ name: "Teamwork", id: "sk-tw", percent: 95 },
+					{ name: "Communication", id: "sk-com", percent: 90 },
+					{ name: "Creativity", id: "sk-crv", percent: 90 },
+					{ name: "Adaptability", id: "sk-ada", percent: 100 },
+					{ name: "Leadership", id: "sk-lead", percent: 80 },
+					{ name: "Empathy", id: "sk-epty", percent: 100 }
+				]
+			};
 		}
 	};
 </script>
@@ -200,7 +107,7 @@
 		width: 100vw;
 		height: 100vh;
 		display: flex;
-		background-color: #1d1d1d;
+		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='937' preserveAspectRatio='none' viewBox='0 0 1920 937'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1795%26quot%3b)' fill='none'%3e%3crect width='1920' height='937' x='0' y='0' fill='url(%23SvgjsRadialGradient1796)'%3e%3c/rect%3e%3cpath d='M1175.22-158.6C978.94-20.06 1097.16 689.64 746.92 701.66 396.67 713.68 117.16 406.11-109.69 401.82' stroke='rgba(60%2c 59%2c 76%2c 0.8666666666666667)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1336.48-63.29C1171.92-33.2 1260.05 355.19 834.73 379.43 409.4 403.67 97.37 730.27-168.78 735.49' stroke='rgba(60%2c 59%2c 76%2c 0.8666666666666667)' stroke-width='2'%3e%3c/path%3e%3cpath d='M916.62-64.21C738.32-22.84 723.16 406.67 397.67 452.25 72.18 497.83 27.08 733.06-121.28 742.72' stroke='rgba(60%2c 59%2c 76%2c 0.8666666666666667)' stroke-width='2'%3e%3c/path%3e%3cpath d='M969.72-14.7C827.96 61.59 895.74 533.3 635.77 535.88 375.8 538.46 148.06 269.28-32.13 264.15' stroke='rgba(60%2c 59%2c 76%2c 0.8666666666666667)' stroke-width='2'%3e%3c/path%3e%3cpath d='M1516.72-85.87C1207.97-10.32 1100.86 813.55 628.15 823.51 155.44 833.47-28.81 563.87-260.42 561.15' stroke='rgba(60%2c 59%2c 76%2c 0.8666666666666667)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1795'%3e%3crect width='1920' height='937' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cradialGradient cx='100%25' cy='50%25' r='1976.33' gradientUnits='userSpaceOnUse' id='SvgjsRadialGradient1796'%3e%3cstop stop-color='rgba(48%2c 46%2c 46%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(29%2c 29%2c 29%2c 1)' offset='1'%3e%3c/stop%3e%3c/radialGradient%3e%3c/defs%3e%3c/svg%3e");
 		flex-direction: column;
 		z-index: 6;
 	}
@@ -216,31 +123,19 @@
 		color: #e0e3f4;
 		margin-bottom: 20px;
 
-		.under-my-skills {
-			height: 2px;
-			background-color: #00e8fc;
-			width: 30%;
-			margin-top: 0px;
-			margin-left: auto;
-			margin-right: auto;
-			box-shadow: 0px 0px 10px 5px rgba(0, 232, 252, 0.56);
-		}
-
 		h2 {
 			height: 90px;
 			top: 2px;
 			background-color: transparent;
 			font-size: 5em;
 			font-family: "Bebas Neue", sans-serif;
-			width: 40%;
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
+			width: 100%;
+			text-align: right;
 			letter-spacing: 0.02em;
 		}
 	}
 
-	@keyframes Animation {
+	@keyframes glass-shine {
 		0% {
 			background-position: 10% 0%;
 		}
@@ -251,22 +146,21 @@
 
 	@media (prefers-reduced-motion: no-preference) {
 		.skill-list-animation {
-			animation: Animation 5s ease forwards;
+			animation: glass-shine 5s ease forwards;
 		}
 	}
 
 	.skills-list {
-		border-radius: 5px;
+		border-radius: 2px;
 		height: 70vh;
-		background: rgb(31, 236, 255);
 		background: linear-gradient(
 			121deg,
-			rgba(31, 236, 255, 0.2920518549216562) 12%,
-			rgba(252, 252, 252, 0.16880255520176823) 27%,
-			rgba(81, 240, 255, 0.49933476808692223) 44%,
-			rgba(255, 255, 255, 0.10997902579000352) 60%,
-			rgba(116, 243, 255, 0.5301470930168943) 71%,
-			rgba(255, 255, 255, 0.10997902579000352) 89%
+			rgba(50, 50, 50, 0.8920518549216562) 12%,
+			rgba(50, 50, 50, 0.86880255520176823) 27%,
+			rgba(50, 50, 50, 0.99933476808692223) 44%,
+			rgba(50, 50, 50, 0.80997902579000352) 60%,
+			rgba(50, 50, 50, 0.8301470930168943) 71%,
+			rgba(50, 50, 50, 0.90997902579000352) 89%
 		);
 		background-size: 600% 600%;
 		margin-top: 20px;
@@ -317,65 +211,12 @@
 							-moz-box-shadow: 0px 0px 10px 5px rgba(226, 40, 77, 0.56);
 						}
 					}
+
 					.skill-percent {
 						align-self: flex-end;
 						font-size: 0.5em;
 					}
 				}
-			}
-		}
-
-		.hard-skills {
-			li:nth-child(1) .skill-bar {
-				width: 70%;
-			}
-			li:nth-child(2) .skill-bar {
-				width: 80%;
-			}
-			li:nth-child(3) .skill-bar {
-				width: 80%;
-			}
-			li:nth-child(4) .skill-bar {
-				width: 65%;
-			}
-			li:nth-child(5) .skill-bar {
-				width: 65%;
-			}
-			li:nth-child(6) .skill-bar {
-				width: 65%;
-			}
-			li:nth-child(7) .skill-bar {
-				width: 95%;
-			}
-			li:nth-child(8) .skill-bar {
-				width: 80%;
-			}
-		}
-
-		.soft-skills {
-			li:nth-child(1) .skill-bar {
-				width: 90%;
-			}
-			li:nth-child(2) .skill-bar {
-				width: 100%;
-			}
-			li:nth-child(3) .skill-bar {
-				width: 90%;
-			}
-			li:nth-child(4) .skill-bar {
-				width: 90%;
-			}
-			li:nth-child(5) .skill-bar {
-				width: 90%;
-			}
-			li:nth-child(6) .skill-bar {
-				width: 100%;
-			}
-			li:nth-child(7) .skill-bar {
-				width: 80%;
-			}
-			li:nth-child(8) .skill-bar {
-				width: 100%;
 			}
 		}
 	}

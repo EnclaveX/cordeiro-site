@@ -1,9 +1,9 @@
 <template>
 	<div>
-		<Presentation></Presentation>
+		<presentation></presentation>
 		<profile></profile>
 		<skills></skills>
-		<!-- <StarryBackground></StarryBackground> -->
+		<lifeline></lifeline>
 	</div>
 </template>
 
@@ -11,13 +11,13 @@
 	import Presentation from "./../components/homePage/Presentation";
 	import Profile from "./../components/homePage/Profile";
 	import Skills from "./../components/homePage/Skills";
-	import StarryBackground from "./../components/homePage/StarryBackground";
+	import Lifeline from "./../components/homePage/Lifeline";
 	export default {
 		components: {
 			Presentation,
 			Profile,
 			Skills,
-			StarryBackground
+			Lifeline
 		},
 		provide: function() {
 			return {
@@ -26,9 +26,7 @@
 			};
 		},
 		data() {
-			return {
-
-			};
+			return {};
 		},
 		methods: {
 			click(event) {
@@ -52,6 +50,9 @@
 </script>
 
 <style>
+	body {
+		overflow-y: overlay;
+	}
 	.link {
 		position: absolute;
 		text-decoration: none;
@@ -60,19 +61,22 @@
 		left: 0;
 	}
 
-	.fade-enter-active,
-	.fade-leave-active {
-		transition: opacity 1s ease;
-	}
-
-	.fade-enter-from,
-	.fade-leave-to {
-		opacity: 0;
-	}
-
 	@keyframes slide {
 		to {
 			transform: translateX(0px);
 		}
+	}
+
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #aaa;
+		border-radius: 10px;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: #888;
 	}
 </style>
