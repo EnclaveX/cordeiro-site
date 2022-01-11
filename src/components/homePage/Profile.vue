@@ -106,7 +106,7 @@
 		},
 		methods: {
 			animateButton: function(event, type) {
-				this.changeProfile(event, type);
+				this.changeProfile(type);
 
 				let ripples = document.createElement("div");
 
@@ -121,7 +121,7 @@
 					ripples.remove();
 				}, 800);
 			},
-			changeProfile: async function(event, type) {
+			changeProfile: async function(type) {
 				const hexagonList = Array.from(
 					document.querySelectorAll(".hexagon-front")
 				);
@@ -227,7 +227,7 @@
 		height: 100vh;
 		display: flex;
 		flex-direction: column;
-		background-color: #ffffff55;
+		background-color: #e0e3f4;
 	}
 
 	.my-profile {
@@ -253,6 +253,7 @@
 		display: flex;
 		flex-direction: row;
 		width: 90%;
+		background-color: #ffffff55;
 		box-shadow: 10px 10px 40px 0px #00000055;
 		border-radius: 2px;
 	}

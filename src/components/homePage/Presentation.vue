@@ -19,6 +19,7 @@
 </script>
 
 <style lang="scss">
+
 	.titles {
 		height: 100vh;
 		width: 100%;
