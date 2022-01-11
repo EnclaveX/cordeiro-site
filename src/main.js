@@ -7,14 +7,12 @@ import { createI18n } from "vue-i18n"
 import router from './router'
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faPhone, faAngleDoubleLeft, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDoubleLeft, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 import {
-    faTwitter,
-    faFacebook,
-    faGithub
+    faGithub, faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faPhone, faTwitter, faFacebook, faGithub, faAngleDoubleLeft, faAngleDoubleRight);
+library.add(faInstagram, faGithub, faAngleDoubleLeft, faAngleDoubleRight);
 
 const i18n = createI18n({
     legacy: false,
