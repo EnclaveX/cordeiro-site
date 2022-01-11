@@ -25,6 +25,7 @@
 							<font-awesome-icon :icon="['fab', 'github']" class="icon alt scroll-icon"/>
 						</div>
 					</a>
+					
 				</div>
 			</div>
 		</div>
@@ -38,7 +39,7 @@
 <style lang="scss">
 	.contact {
 		height: 60vh;
-        background-color: #e0e3f4;
+		background-color: #e0e3f4;
 	}
 
 	.social-networks {
@@ -65,11 +66,11 @@
 					justify-content: center;
 					align-items: center;
 					font-size: 1rem;
-                    transition: all 0.25s ease;
+					transition: all 0.25s ease;
 				}
 
 				.icon-container:hover {
-                    box-shadow: 5px 5px 15px 5px #00000055;
+					box-shadow: 5px 5px 15px 5px #00000055;
 					font-size: 1.1rem;
 				}
 			}
@@ -92,9 +93,9 @@
 		}
 	}
 
-    .contact-address {
-        height: 110px;
-    }
+	.contact-address {
+		height: 110px;
+	}
 
 	.contact h6,
 	.contact h2 a {
@@ -103,20 +104,20 @@
 		text-decoration: none;
 		font-size: 2em;
 		letter-spacing: 3px;
-        transition: all 0.25s ease;
+		transition: all 0.25s ease;
 	}
 
-    .contact h2 a:hover {
+	.contact h2 a:hover {
 		font-size: 2.1em;
-    }
+	}
 
 	.contacts {
 		padding: 30px;
 		height: 40vh;
-        width: 95%;
-        margin: 0% auto;
-        border-radius: 2px;
-        box-shadow: 10px 10px 40px -20px #00000055;
-        background-color: #ffffffff;
+		width: 95%;
+		margin: 0% auto;
+		border-radius: 2px;
+		box-shadow: 10px 10px 40px -20px #00000055;
+		background-color: #ffffffaa;
 	}
 </style>

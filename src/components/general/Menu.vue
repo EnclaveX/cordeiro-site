@@ -75,6 +75,22 @@
 		background-color: #3d3d3d;
 		border-radius: 5px;
 		z-index: 5;
+		li > a {
+			text-decoration: none;
+			color: #e0e3f4;
+			font-family: "Bebas Neue", sans-serif;
+			font-size: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			width: 100%;
+			transition: font-size 0.3s ease;
+		}
+
+		li > a:hover {
+			font-size: 34px;
+		}
 	}
 
 	.menu-fixed {
@@ -98,22 +114,5 @@
 			background-color: #26272c;
 			list-style: none;
 		}
-	}
-
-	li > a {
-		text-decoration: none;
-		color: #e0e3f4;
-		font-family: "Bebas Neue", sans-serif;
-		font-size: 30px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
-		width: 100%;
-		transition: font-size 0.3s ease;
-	}
-
-	li > a:hover {
-		font-size: 34px;
 	}
 </style>

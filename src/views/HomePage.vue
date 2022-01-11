@@ -6,6 +6,7 @@
 		<lifeline></lifeline>
 		<portifolio></portifolio>
 		<contact></contact>
+		<end></end>
 	</div>
 </template>
 
@@ -16,6 +17,7 @@
 	import Lifeline from "./../components/homePage/Lifeline";
 	import Portifolio from "./../components/homePage/Portifolio";
 	import Contact from "./../components/homePage/Contact";
+	import End from "./../components/homePage/End";
 
 	export default {
 		components: {
@@ -24,7 +26,8 @@
 			Skills,
 			Lifeline,
 			Portifolio,
-			Contact
+			Contact,
+			End
 		},
 		provide: function() {
 			return {

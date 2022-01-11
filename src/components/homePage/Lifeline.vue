@@ -1,5 +1,5 @@
 <template>
-	<div class="lifeline">
+	<div class="lifeline" id="lifeline">
 		<div class="my-lifeline">
 			<h2>{{$t('myLifeline')}}</h2>
 		</div>
