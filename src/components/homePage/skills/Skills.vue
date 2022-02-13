@@ -1,5 +1,5 @@
 <template>
-	<div class="skills">
+	<div id="skills" class="skills">
 		<div class="my-skills">
 			<h2>{{$t('mySkills')}}</h2>
 			<div ref="skillList" class="skills-list">
@@ -77,16 +77,22 @@
 		data: () => {
 			return {
 				hardSkills: [
-					{ name: "English", id: "sk-eng", percent: 60 },
 					{ name: "CSS", id: "sk-css", percent: 80 },
 					{ name: "HTML", id: "sk-html", percent: 80 },
-					{ name: "JavaScript", id: "sk-js", percent: 65 },
+					{ name: "JavaScript", id: "sk-js", percent: 75 },
+					{ name: "TypeScript", id: "sk-ts", percent: 65 },
 					{ name: "VueJS", id: "sk-vue", percent: 65 },
 					{ name: "NodeJS", id: "sk-node", percent: 65 },
+					{ name: "DDD", id: "sk-ddd", percent: 75 },
+					{ name: "TDD", id: "sk-tdd", percent: 75 },
+					{ name: "SOLID", id: "sk-sd", percent: 75 },
 					{ name: "PowerBuilder", id: "sk-pb", percent: 95 },
-					{ name: "PostgreSQL", id: "sk-pg", percent: 80 }
+					{ name: "PostgreSQL", id: "sk-pg", percent: 80 },
+					{ name: "MongoDB", id: "sk-mdb", percent: 65 }
 				],
 				softSkills: [
+					{ name: "English", id: "sk-eng", percent: 60 },
+					{ name: "Agile", id: "sk-ag", percent: 80 },
 					{ name: "Problem-Solving", id: "sk-ps", percent: 90 },
 					{ name: "Work-Ethic", id: "sk-we", percent: 100 },
 					{ name: "Teamwork", id: "sk-tw", percent: 95 },
@@ -214,6 +220,22 @@
 
 					.skill-percent {
 						align-self: flex-end;
+						font-size: 0.5em;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-height: 600px) {
+		.my-skills {
+			top: 20px;
+		}
+
+		.skills-list {
+			ul {
+				li {
+					p {
 						font-size: 0.5em;
 					}
 				}

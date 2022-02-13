@@ -42,55 +42,55 @@
 						year: 1993,
 						title: "Nascimento",
 						description:
-							"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe blanditiis aliquid pariatur ea fuga ad velit mollitia, dicta sit alias doloribus quia numquam nulla itaque vero, eveniet debitis sed.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe blanditiis aliquid pariatur ea fuga ad velit mollitia, dicta sit alias doloribus quia numquam nulla itaque vero, eveniet debitis sed.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe blanditiis aliquid pariatur ea fuga ad velit mollitia, dicta sit alias doloribus quia numquam nulla itaque vero, eveniet debitis sed.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe blanditiis aliquid pariatur ea fuga ad velit mollitia, dicta sit alias doloribus quia numquam nulla itaque vero, eveniet debitis sed.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe blanditiis aliquid pariatur ea fuga ad velit mollitia, dicta sit alias doloribus quia numquam nulla itaque vero, eveniet debitis sed.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe blanditiis aliquid pariatur ea fuga ad velit mollitia, dicta sit alias doloribus quia numquam nulla itaque vero, eveniet debitis sed."
+							"Nasci dia 22 de Maio de 1993 em Criciúma, Santa Catarina."
 					},
 					{
 						year: 2008,
-						title: "Início do meu desenvolvimento",
+						title: "Ensino Técnico",
 						description:
-							"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe blanditiis aliquid pariatur ea fuga ad velit mollitia, dicta sit alias doloribus quia numquam nulla itaque vero, eveniet debitis sed."
+							"Em Fevereiro de 2008, iniciei meus estudos em programação em uma escola técnica chamada CEDUP em Criciúma, Santa Catarina."
 					},
 					{
 						year: 2011,
-						title: "Fim do primeiro ciclo",
+						title: "Final do Ensino Técnico",
 						description:
-							"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe blanditiis aliquid pariatur ea fuga ad velit mollitia, dicta sit alias doloribus quia numquam nulla itaque vero, eveniet debitis sed."
+							"Ao fim de 4 longos anos me formei após apresentar meu trabalho de conclusão de curso. Aqui aprendi o básico de desenvolvimento em tecnologias como: Delphi, Firebird, HTML, CSS e JavaScript."
 					},
 					{
 						year: 2012,
-						title: "Início de algo maior",
+						title: "Faculdade e meu primeiro emprego",
 						description:
-							"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe blanditiis aliquid pariatur ea fuga ad velit mollitia, dicta sit alias doloribus quia numquam nulla itaque vero, eveniet debitis sed."
+							"Em 2012, iniciei minha faculdade em Sistemas de Informação, e graças a um colega iniciei minha carreira como Desenvolvedor na TW Sistemas. Iniciei como Desenvolvedor PowerBuilder|Sybase."
 					},
 					{
 						year: 2015,
-						title: "Transição",
+						title: "Primeira transição",
 						description:
-							"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe blanditiis aliquid pariatur ea fuga ad velit mollitia, dicta sit alias doloribus quia numquam nulla itaque vero, eveniet debitis sed."
+							"Após alguns anos como desenvolvedor, fui promovido a analista e comecei a participar um pouco mais das decisões dos nossos produtos. Trabalhei durante anos com foco em um software para distribuidoras e outro para controle de EPI's."
 					},
 					{
-						year: 2017,
-						title: "Primeira quebra",
+						year: 2018,
+						title: "Mudança de ares",
 						description:
-							"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe blanditiis aliquid pariatur ea fuga ad velit mollitia, dicta sit alias doloribus quia numquam nulla itaque vero, eveniet debitis sed."
+							"Devido a uma reestruturação interna da TW Sistemas, o produto em que eu trabalhava foi remanejado para outra empresa, a DuaPi sistemas, a qual trabalhei como Coordenador de Desenvolvimento e claro também como Desenvolvedor. Aqui nossos produtos começaram a ganhar uma nova cara, pois, migramos um dos nossos produtos de PowerBuilder|PostgreSQL para Laravel|JQuery|PostgreSQL."
 					},
 					{
 						year: 2019,
-						title: "A tão esperada conclusão",
+						title: "Apresentação do TCC e finalização da faculdade",
 						description:
-							"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe blanditiis aliquid pariatur ea fuga ad velit mollitia, dicta sit alias doloribus quia numquam nulla itaque vero, eveniet debitis sed."
+							"No ano de 2019 finalmente consegui concluir minha faculdade, por causa do meu trabalho e de alguns assuntos pessoais posterguei muito a conclusão. Mas, isso me fez um aluno melhor e fez com que eu me dedicasse demais ao meu TCC, apresentei com louvor um sistema que integrava um sistema de assinatura de contratos a blockchain da Ethereum através de Smart Contracts."
 					},
 					{
 						year: 2021,
-						title: "Um ano de mudanças",
+						title: "Novas mudanças",
 						description:
-							"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe blanditiis aliquid pariatur ea fuga ad velit mollitia, dicta sit alias doloribus quia numquam nulla itaque vero, eveniet debitis sed."
+							"2021 foi responsável por minha maior mudança até o momento, foi o ano em que me casei, que mudei de emprego após nove anos e também o ano em que descobri que serei pai. Minha vida deu uma virada brusca rumo ao sucesso que sempre almejei. Hoje trabalho na CLAMED como analista de software com foco em PowerBuilder e espero novas alegrias nos próximos anos."
 					},
 					{
 						year: 2022,
-						title: "Redenção",
+						title: "Novos horizontes",
 						description:
-							"Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe blanditiis aliquid pariatur ea fuga ad velit mollitia, dicta sit alias doloribus quia numquam nulla itaque vero, eveniet debitis sed."
+							"O ano de 2022 começou com novos estudos, aonde agora fovo minhas atenções exclusivamente ao JavaScript e tudo que o cerca. A lista de tecnologias em que estou me especializando está mais acima."
 					}
 				]
 			};
@@ -129,12 +129,12 @@
 				let percentageDistanceDots = 100 / this.years.length - 1;
 
 				dots.map((el, id) => {
-					el.classList.remove('dot-selected')
+					el.classList.remove("dot-selected");
 
 					if (id <= this.yearId) {
-						el.classList.add('dot-selected')
+						el.classList.add("dot-selected");
 					}
-				})
+				});
 
 				var interval = setInterval(() => {
 					this.percentageFilling += percentageIncrement;
@@ -153,85 +153,14 @@
 					}
 				}, 1);
 			}
+		},
+		mounted() {
+			this.fillingLifelineBar(0)
 		}
 	};
 </script>
 
 <style lang="scss">
-	.slide-fade-enter-active {
-		transition: all 0.5s ease;
-	}
-	.slide-fade-leave-active {
-		transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
-	}
-	.slide-fade-enter,
-	.slide-fade-leave-to {
-		transform: translateX(10px);
-		opacity: 0;
-	}
-
-	.scroll-icon {
-		font-size: 2em;
-	}
-
-	.scrolling-years {
-		grid-row: 1 / span 3;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		transition: all 0.3s ease-in-out;
-	}
-	.scrolling-years:hover {
-		background-color: #1d1d1d55;
-	}
-
-	.previous-years {
-		grid-column: 3;
-	}
-
-	.next-years {
-		grid-column: 1;
-	}
-
-	.lifeline-container {
-		padding: 0 10px;
-		overflow-x: hidden;
-		grid-column: 2;
-		grid-row: 2 / span 2;
-	}
-
-	.lifeline-dot-description {
-		grid-column: 2;
-		grid-row: 4;
-		background-color: #ffffff55;
-		padding: 10px;
-		max-height: 95%;
-		min-height: 35%;
-		overflow-y: scroll;
-		border-radius: 2px;
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-		border-left: 10px solid #e2284d;
-		box-shadow: 10px 10px 40px -20px #00000055;
-
-		h5 {
-			font-size: 1.5em;
-			margin: 0px;
-			font-family: "Bebas Neue", sans-serif;
-			letter-spacing: 1px;
-		}
-
-		p {
-			font-size: 1.1em;
-			letter-spacing: 0.2px;
-			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-				Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-				"Segoe UI Symbol";
-			text-indent: 2em;
-		}
-	}
-
 	.lifeline {
 		position: relative;
 		height: 60vh;
@@ -251,7 +180,7 @@
 			top: 2px;
 			font-size: 5em;
 			font-family: "Bebas Neue", sans-serif;
-			width: 100%;
+			width: auto;
 			margin-left: 5%;
 			letter-spacing: 0.02em;
 		}
@@ -270,17 +199,19 @@
 		box-shadow: 10px 10px 40px -10px #00000055;
 	}
 
+	.lifeline-container {
+		padding: 0 10px;
+		overflow-x: hidden;
+		grid-column: 2;
+		grid-row: 2 / span 2;
+	}
+
 	.lifeline-bar {
 		height: 10px;
 		width: 150%;
 		background-color: #1d1d1d;
 		border-radius: 2px;
 		margin-top: 15px;
-	}
-
-	.lifeline-bar-content {
-		height: 100%;
-		width: 100%;
 	}
 
 	.lifeline-years {
@@ -316,5 +247,77 @@
 	.year {
 		font-family: "Bebas Neue", sans-serif;
 		color: #1d1d1d;
+	}
+
+	.slide-fade-enter-active {
+		transition: all 0.5s ease;
+	}
+	.slide-fade-leave-active {
+		transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+	}
+	.slide-fade-enter,
+	.slide-fade-leave-to {
+		transform: translateX(10px);
+		opacity: 0;
+	}
+
+	.lifeline-dot-description {
+		grid-column: 2;
+		grid-row: 4;
+		background-color: #ffffff55;
+		padding: 10px;
+		max-height: 95%;
+		min-height: 35%;
+		overflow-y: scroll;
+		border-radius: 2px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		border-left: 10px solid #e2284d;
+		box-shadow: 10px 10px 40px -20px #00000055;
+
+		h5 {
+			font-size: 1.5em;
+			margin: 0px;
+			font-family: "Bebas Neue", sans-serif;
+			letter-spacing: 1px;
+		}
+
+		p {
+			font-size: 1.1em;
+			letter-spacing: 0.2px;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+				Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+				"Segoe UI Symbol";
+			text-indent: 2em;
+		}
+	}
+
+	.scroll-icon {
+		font-size: 2em;
+	}
+
+	.scrolling-years {
+		grid-row: 1 / span 3;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.3s ease-in-out;
+	}
+	.scrolling-years:hover {
+		background-color: #1d1d1d55;
+	}
+
+	.previous-years {
+		grid-column: 3;
+	}
+
+	.next-years {
+		grid-column: 1;
+	}
+	@media (max-height: 600px) {
+		.lifeline {
+			height: 70vh;
+		}
 	}
 </style>

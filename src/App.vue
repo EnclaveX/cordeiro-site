@@ -24,7 +24,17 @@
 			return { t, locale };
 		},
 		mounted() {
-			this.$router.push({ path: `/HomePage` });
+			console.log(navigator.userAgent.match(/iPhone/i))
+			console.log(navigator.userAgent.match(/iPod/i))
+			if (
+				navigator.userAgent.match(/iPhone/i) ||
+				navigator.userAgent.match(/iPod/i) ||
+				screen.width <= 400
+			) {
+				this.$router.push({ path: `/mobile/HomePage` });
+			} else {
+				this.$router.push({ path: `/HomePage` });
+			}
 		}
 	};
 </script>
@@ -42,6 +52,11 @@
 
 	body {
 		overflow-x: hidden;
+	}
+
+	a {
+		text-decoration: none;
+		color: #1d1d1d;
 	}
 
 	.contain {

@@ -1,8 +1,13 @@
 {
-    "presentation-title": "Hello, I'm Guilherme Cordeiro.",
-    "presentation-sub-title1": "Developer",
-    "presentation-sub-title2": "Musician",
-    "presentation-sub-title3": "Anothers",
-    "presentation-sub-title4": "Human",
-    "question-sub-title": "Who do you want to know about?"
+    "presentation": {
+        "presentation": "Hello, I'm Guilherme Cordeiro.",
+        "title": "Software Analyst && Fullstack Javascript Developer",
+        "tecnologies": "VueJS/NodeJS/MongoDB/PostgreSQL/Agile/SOLID"
+    },
+    "profile": {
+        "myProfile": "My Profile"
+    },
+    "skills": {
+        "mySkills": "My Skills"
+    }
 }

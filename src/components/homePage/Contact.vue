@@ -1,5 +1,5 @@
 <template>
-	<div class="contact">
+	<div id="contact" class="contact">
 		<div class="my-contact">
 			<h2>{{$t('myContact')}}</h2>
 		</div>
@@ -25,7 +25,11 @@
 							<font-awesome-icon :icon="['fab', 'github']" class="icon alt scroll-icon"/>
 						</div>
 					</a>
-					
+					<a href="https://www.linkedin.com/in/guilhermecordeiro93/" target="_blank">
+						<div class="icon-container">
+							<font-awesome-icon :icon="['fab', 'linkedin']" class="icon alt scroll-icon"/>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -48,6 +52,7 @@
 		h6 {
 			width: 100%;
 		}
+
 		.icons-social-networks {
 			height: 100px;
 			display: flex;
@@ -87,7 +92,7 @@
 			top: 2px;
 			font-size: 5em;
 			font-family: "Bebas Neue", sans-serif;
-			width: 100%;
+			width: auto;
 			margin-left: 5%;
 			letter-spacing: 0.02em;
 		}
@@ -119,5 +124,15 @@
 		border-radius: 2px;
 		box-shadow: 10px 10px 40px -20px #00000055;
 		background-color: #ffffffaa;
+	}
+
+	@media (max-height: 600px) {
+		.contact {
+			height: 70vh;
+			background-color: #e0e3f4;
+		}
+		.contacts {
+			height: 50vh;
+		}
 	}
 </style>

@@ -9,10 +9,10 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faAngleDoubleLeft, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 import {
-    faGithub, faInstagram
+    faGithub, faInstagram, faLinkedin, faSpotify
 } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faInstagram, faGithub, faAngleDoubleLeft, faAngleDoubleRight);
+library.add(faInstagram, faGithub, faLinkedin, faSpotify, faAngleDoubleLeft, faAngleDoubleRight);
 
 const i18n = createI18n({
     legacy: false,

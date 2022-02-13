@@ -11,13 +11,13 @@
 </template>
 
 <script>
-	import Presentation from "./../components/homePage/Presentation";
-	import Profile from "./../components/homePage/profile/Profile";
-	import Skills from "./../components/homePage/skills/Skills";
-	import Lifeline from "./../components/homePage/Lifeline";
-	import Portifolio from "./../components/homePage/Portifolio";
-	import Contact from "./../components/homePage/Contact";
-	import End from "./../components/homePage/End";
+	import Presentation from "./../components/homePageMobile/Presentation";
+	import Profile from "./../components/homePageMobile/Profile";
+	import Skills from "./../components/homePageMobile/Skills";
+	import Lifeline from "./../components/homePageMobile/Lifeline";
+	import Portifolio from "./../components/homePageMobile/Portifolio";
+	import Contact from "./../components/homePageMobile/Contact";
+	import End from "./../components/homePageMobile/End";
 
 	export default {
 		components: {
@@ -63,6 +63,7 @@
 	body {
 		overflow-y: overlay;
 	}
+
 	@keyframes slide {
 		to {
 			transform: translateX(0px);
