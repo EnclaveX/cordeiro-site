@@ -1,6 +1,7 @@
 <template>
 	<div
 		:class="{
+		'page-title': true,
         'page-title-black': type==='black', 
         'page-title-white': type==='white'
         }"
@@ -19,48 +20,37 @@
 </script>
 
 <style lang="scss">
-	.page-title-black {
+	.page-title {
 		margin-top: 1%;
 		margin-bottom: -2%;
 		height: 17%;
 		position: relative;
-		color: #1d1d1d;
+	}
 
-		h2 {
-			height: 90px;
-			top: 2px;
-			font-size: 5em;
-			font-family: "Bebas Neue", sans-serif;
-			width: auto;
-			margin-left: 5%;
-			letter-spacing: 0.02em;
-		}
+	.page-title > h2 {
+		height: 90px;
+		top: 2px;
+		background-color: transparent;
+		font-size: 5em;
+		font-family: "Bebas Neue", sans-serif;
+		width: 100%;
+		letter-spacing: 0.02em;
 	}
 
 	.page-title-black {
-		margin-top: 1%;
-		margin-bottom: -2%;
-		height: 17%;
-		position: relative;
 		color: #1d1d1d;
+	}
+
+	.page-title-black > h2 {
+		margin-left: 5%;
 	}
 
 	.page-title-white {
-		margin-top: 1%;
-		margin-bottom: -2%;
-		height: 17%;
-		position: relative;
 		color: #e0e3f4;
+		margin-right: 5%;
 	}
 
-	page-title-black > h2,
-	page-title-white > h2 {
-		height: 90px;
-		top: 2px;
-		font-size: 5em;
-		font-family: "Bebas Neue", sans-serif;
-		width: auto;
-		margin-left: 5%;
-		letter-spacing: 0.02em;
+	.page-title-white > h2 {
+		text-align: right;
 	}
 </style>

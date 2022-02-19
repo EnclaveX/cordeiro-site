@@ -1,30 +1,10 @@
 <template>
 	<div id="skills" class="skills">
+		<PageTitle title="skills.mySkills" type="white"></PageTitle>
 		<div class="my-skills">
-			<h2>{{$t('mySkills')}}</h2>
 			<div ref="skillList" class="skills-list">
-				<ul class="hard-skills">
-					<li v-for="item in hardSkills" :key="item.id">
-						<p>{{item.name}}</p>
-						<div class="skill-content">
-							<div class="skill-empty">
-								<div :data-percent="item.percent" class="skill-bar"></div>
-							</div>
-							<div class="skill-percent">{{`${item.percent}%`}}</div>
-						</div>
-					</li>
-				</ul>
-				<ul class="soft-skills">
-					<li v-for="item in softSkills" :key="item.id">
-						<p>{{item.name}}</p>
-						<div class="skill-content">
-							<div class="skill-empty">
-								<div :data-percent="item.percent" class="skill-bar"></div>
-							</div>
-							<div class="skill-percent">{{`${item.percent}%`}}</div>
-						</div>
-					</li>
-				</ul>
+				<ColumnSkills :skills="hardSkills"></ColumnSkills>
+				<ColumnSkills :skills="softSkills"></ColumnSkills>
 			</div>
 		</div>
 	</div>
@@ -32,40 +12,23 @@
 
 <script>
 	import { useI18n } from "vue-i18n";
+	import PageTitle from "./../../general/PageTitle";
+	import ColumnSkills from "./ColumnSkills";
+
 	export default {
+		components: {
+			PageTitle,
+			ColumnSkills
+		},
 		setup() {
 			const { t, locale } = useI18n();
 
 			return { t, locale };
 		},
-		created() {
-			window.addEventListener("scroll", this.handleScroll);
-		},
 		mounted() {
 			this.fullingProgressBarSkill();
 		},
-		destroyed() {
-			window.removeEventListener("scroll", this.handleScroll);
-		},
 		methods: {
-			handleScroll(event) {
-				const skillTopPosition =
-					this.$refs.skillList && this.$refs.skillList.getBoundingClientRect().top
-						? this.$refs.skillList.getBoundingClientRect().top
-						: 0;
-
-				const skillBottomPosition =
-					this.$refs.skillList &&
-					this.$refs.skillList.getBoundingClientRect().bottom
-						? this.$refs.skillList.getBoundingClientRect().bottom
-						: 0;
-
-				let skillList = document.querySelector(".skills-list");
-
-				if (skillTopPosition > 0 && skillBottomPosition > 0) {
-					skillList.classList.add("skill-list-animation");
-				}
-			},
 			fullingProgressBarSkill: () => {
 				const bars = Array.from(document.querySelectorAll(".skill-bar"));
 
@@ -118,29 +81,6 @@
 		z-index: 6;
 	}
 
-	.my-skills {
-		top: 60px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 0px;
-		height: 100px;
-		width: 90%;
-		position: relative;
-		color: #e0e3f4;
-		margin-bottom: 20px;
-
-		h2 {
-			height: 90px;
-			top: 2px;
-			background-color: transparent;
-			font-size: 5em;
-			font-family: "Bebas Neue", sans-serif;
-			width: 100%;
-			text-align: right;
-			letter-spacing: 0.02em;
-		}
-	}
-
 	@keyframes glass-shine {
 		0% {
 			background-position: 10% 0%;
@@ -169,69 +109,12 @@
 			rgba(50, 50, 50, 0.90997902579000352) 89%
 		);
 		background-size: 600% 600%;
-		margin-top: 20px;
 		display: flex;
 		justify-content: flex-start;
-
-		ul {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-evenly;
-			width: 50%;
-
-			li {
-				font-family: "Bebas Neue", sans-serif;
-				margin-left: 40px;
-				font-size: 2.2em;
-				list-style: none;
-				display: flex;
-
-				p {
-					width: 36%;
-					font-size: 0.8em;
-				}
-
-				.skill-content {
-					width: 60%;
-					height: 100%;
-					margin-top: auto;
-					margin-bottom: auto;
-					display: flex;
-					flex-direction: column;
-
-					.skill-empty {
-						width: 100%;
-						height: 4px;
-						background-color: #1d1d1d44;
-						border-radius: 2px;
-						margin-top: auto;
-
-						.skill-bar {
-							height: 4px;
-							border-radius: 2px;
-							background-color: #e2284d;
-							margin-top: auto;
-							margin-bottom: auto;
-							box-shadow: 0px 0px 10px 5px rgba(226, 40, 77, 0.56);
-							-webkit-box-shadow: 0px 0px 10px 5px rgba(226, 40, 77, 0.56);
-							-moz-box-shadow: 0px 0px 10px 5px rgba(226, 40, 77, 0.56);
-						}
-					}
-
-					.skill-percent {
-						align-self: flex-end;
-						font-size: 0.5em;
-					}
-				}
-			}
-		}
+		margin: 0 4%;
 	}
 
 	@media (max-height: 600px) {
-		.my-skills {
-			top: 20px;
-		}
-
 		.skills-list {
 			ul {
 				li {
