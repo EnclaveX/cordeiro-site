@@ -1,0 +1,49 @@
+{
+    "years": [
+        {
+            "year": 1993,
+            "title": "Nascimento",
+            "description": "Nasci dia 22 de Maio de 1993 em Criciúma, Santa Catarina."
+        },
+        {
+            "year": 2008,
+            "title": "Ensino Técnico",
+            "description": "Em Fevereiro de 2008, iniciei meus estudos em programação em uma escola técnica chamada CEDUP em Criciúma, Santa Catarina."
+        },
+        {
+            "year": 2011,
+            "title": "Final do Ensino Técnico",
+            "description": "Ao fim de 4 longos anos me formei após apresentar meu trabalho de conclusão de curso. Aqui aprendi o básico de desenvolvimento em tecnologias como: Delphi, Firebird, HTML, CSS e JavaScript."
+        },
+        {
+            "year": 2012,
+            "title": "Faculdade e meu primeiro emprego",
+            "description": "Em 2012, iniciei minha faculdade em Sistemas de Informação, e graças a um colega iniciei minha carreira como Desenvolvedor na TW Sistemas. Iniciei como Desenvolvedor PowerBuilder|Sybase."
+        },
+        {
+            "year": 2015,
+            "title": "Primeira transição",
+            "description": "Após alguns anos como desenvolvedor, fui promovido a analista e comecei a participar um pouco mais das decisões dos nossos produtos. Trabalhei durante anos com foco em um software para distribuidoras e outro para controle de EPI's."
+        },
+        {
+            "year": 2018,
+            "title": "Mudança de ares",
+            "description": "Devido a uma reestruturação interna da TW Sistemas, o produto em que eu trabalhava foi remanejado para outra empresa, a DuaPi sistemas, a qual trabalhei como Coordenador de Desenvolvimento e claro também como Desenvolvedor. Aqui nossos produtos começaram a ganhar uma nova cara, pois, migramos um dos nossos produtos de PowerBuilder|PostgreSQL para Laravel|JQuery|PostgreSQL."
+        },
+        {
+            "year": 2019,
+            "title": "Apresentação do TCC e finalização da faculdade",
+            "description": "No ano de 2019 finalmente consegui concluir minha faculdade, por causa do meu trabalho e de alguns assuntos pessoais posterguei muito a conclusão. Mas, isso me fez um aluno melhor e fez com que eu me dedicasse demais ao meu TCC, apresentei com louvor um sistema que integrava um sistema de assinatura de contratos a blockchain da Ethereum através de Smart Contracts."
+        },
+        {
+            "year": 2021,
+            "title": "Novas mudanças",
+            "description": "2021 foi responsável por minha maior mudança até o momento, foi o ano em que me casei, que mudei de emprego após nove anos e também o ano em que descobri que serei pai. Minha vida deu uma virada brusca rumo ao sucesso que sempre almejei. Hoje trabalho na CLAMED como analista de software com foco em PowerBuilder e espero novas alegrias nos próximos anos."
+        },
+        {
+            "year": 2022,
+            "title": "Novos horizontes",
+            "description": "O ano de 2022 começou com novos estudos, aonde agora fovo minhas atenções exclusivamente ao JavaScript e tudo que o cerca. A lista de tecnologias em que estou me especializando está mais acima."
+        }
+    ]
+}

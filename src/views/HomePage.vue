@@ -4,7 +4,7 @@
 		<profile></profile>
 		<skills></skills>
 		<lifeline></lifeline>
-		<portifolio></portifolio>
+		<Portfolio></Portfolio>
 		<contact></contact>
 		<end></end>
 	</div>
@@ -14,8 +14,8 @@
 	import Presentation from "./../components/homePage/Presentation";
 	import Profile from "./../components/homePage/profile/Profile";
 	import Skills from "./../components/homePage/skills/Skills";
-	import Lifeline from "./../components/homePage/Lifeline";
-	import Portifolio from "./../components/homePage/Portifolio";
+	import Lifeline from "./../components/homePage/lifeline/Lifeline";
+	import Portfolio from "./../components/homePage/portfolio/Portfolio";
 	import Contact from "./../components/homePage/Contact";
 	import End from "./../components/homePage/End";
 
@@ -25,7 +25,7 @@
 			Profile,
 			Skills,
 			Lifeline,
-			Portifolio,
+			Portfolio,
 			Contact,
 			End
 		},

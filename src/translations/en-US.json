@@ -9,5 +9,11 @@
     },
     "skills": {
         "mySkills": "My Skills"
+    },
+    "lifeline": {
+        "myLifeline": "My Lifeline"
+    },
+    "portfolio": {
+        "myPortfolio": "My Portfolio"
     }
 }

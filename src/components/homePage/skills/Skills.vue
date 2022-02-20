@@ -1,11 +1,9 @@
 <template>
 	<div id="skills" class="skills">
 		<PageTitle title="skills.mySkills" type="white"></PageTitle>
-		<div class="my-skills">
-			<div ref="skillList" class="skills-list">
-				<ColumnSkills :skills="hardSkills"></ColumnSkills>
-				<ColumnSkills :skills="softSkills"></ColumnSkills>
-			</div>
+		<div ref="skillList" class="skills-list">
+			<ColumnSkills :skills="hardSkills"></ColumnSkills>
+			<ColumnSkills :skills="softSkills"></ColumnSkills>
 		</div>
 	</div>
 </template>

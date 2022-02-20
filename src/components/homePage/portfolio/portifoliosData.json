@@ -1,0 +1,76 @@
+{
+    "portifolios": [
+        {
+            "id": 1,
+            "idRad": "1-rad",
+            "idCarousel": "1-carousel-item",
+            "checked": true,
+            "imageUrl": "./../../../assets/portfolio/1.jpg",
+            "description": "My own Website"
+        },
+        {
+            "id": 2,
+            "idRad": "2-rad",
+            "idCarousel": "2-carousel-item",
+            "checked": false,
+            "imageUrl": "./../../../assets/portfolio/2.jpg",
+            "description": "My own Website"
+        },
+        {
+            "id": 3,
+            "idRad": "3-rad",
+            "idCarousel": "3-carousel-item",
+            "checked": false,
+            "imageUrl": "./../../../assets/portfolio/3.jpg",
+            "description": "My own Website"
+        },
+        {
+            "id": 4,
+            "idRad": "4-rad",
+            "idCarousel": "4-carousel-item",
+            "checked": false,
+            "imageUrl": "./../../../assets/portfolio/3.jpg",
+            "description": "My own Website"
+        },
+        {
+            "id": 5,
+            "idRad": "5-rad",
+            "idCarousel": "5-carousel-item",
+            "checked": false,
+            "imageUrl": "./../../../assets/portfolio/3.jpg",
+            "description": "My own Website"
+        },
+        {
+            "id": 6,
+            "idRad": "6-rad",
+            "idCarousel": "6-carousel-item",
+            "checked": false,
+            "imageUrl": "./../../../assets/portfolio/3.jpg",
+            "description": "My own Website"
+        },
+        {
+            "id": 7,
+            "idRad": "7-rad",
+            "idCarousel": "7-carousel-item",
+            "checked": false,
+            "imageUrl": "./../../../assets/portfolio/3.jpg",
+            "description": "My own Website"
+        },
+        {
+            "id": 8,
+            "idRad": "8-rad",
+            "idCarousel": "8-carousel-item",
+            "checked": false,
+            "imageUrl": "./../../../assets/portfolio/3.jpg",
+            "description": "My own Website"
+        },
+        {
+            "id": 9,
+            "idRad": "9-rad",
+            "idCarousel": "9-carousel-item",
+            "checked": false,
+            "imageUrl": "./../../../assets/portfolio/3.jpg",
+            "description": "My own Website"
+        }
+    ]
+}

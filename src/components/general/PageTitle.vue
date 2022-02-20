@@ -21,9 +21,8 @@
 
 <style lang="scss">
 	.page-title {
-		margin-top: 1%;
-		margin-bottom: -2%;
-		height: 17%;
+		margin-top: 5px;
+		height: 90px;
 		position: relative;
 	}
 
@@ -42,12 +41,12 @@
 	}
 
 	.page-title-black > h2 {
-		margin-left: 5%;
+		margin-left: 40px;
 	}
 
 	.page-title-white {
 		color: #e0e3f4;
-		margin-right: 5%;
+		margin-right: 60px;
 	}
 
 	.page-title-white > h2 {

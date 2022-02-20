@@ -41,7 +41,7 @@
 			width: 100%;
 			height: 4px;
 			background-color: #1d1d1d44;
-			border-radius: 2px;
+			border-radius: 2px; 
 			margin-top: auto;
 
 			.skill-bar {
