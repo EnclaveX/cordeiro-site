@@ -21,7 +21,7 @@ const i18n = createI18n({
         en: en,
         br: br
     },
-    fallbackLocale: br
+    fallbackLocale: 'br'
 })
 
 const app = createApp(App)

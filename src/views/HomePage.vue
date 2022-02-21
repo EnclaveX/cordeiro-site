@@ -11,13 +11,13 @@
 </template>
 
 <script>
-	import Presentation from "./../components/homePage/Presentation";
+	import Presentation from "./../components/homePage/presentation/Presentation";
 	import Profile from "./../components/homePage/profile/Profile";
 	import Skills from "./../components/homePage/skills/Skills";
 	import Lifeline from "./../components/homePage/lifeline/Lifeline";
 	import Portfolio from "./../components/homePage/portfolio/Portfolio";
-	import Contact from "./../components/homePage/Contact";
-	import End from "./../components/homePage/End";
+	import Contact from "./../components/homePage/contact/Contact";
+	import End from "./../components/homePage/endpage/End";
 
 	export default {
 		components: {

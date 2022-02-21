@@ -121,7 +121,7 @@
 			max-width: 800px;
 			max-height: 800px;
 			box-shadow: 10px 10px 50px 16px #1d1d1d, 5px 5px 100px 1px #636363;
-			background-image: url("./../../assets/perfil-imgs/me.jpg");
+			background-image: url("./../../../assets/perfil-imgs/me.jpg");
 			background-position: 0%;
 			background-size: cover;
 			box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);

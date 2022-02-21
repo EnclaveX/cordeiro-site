@@ -35,7 +35,7 @@
 		border-radius: 50%;
 		background-color: #fff;
 		cursor: pointer;
-		margin: 3px;
+		margin: 20px 3px;
 	}
 
 	.rad-input.rad-checked {

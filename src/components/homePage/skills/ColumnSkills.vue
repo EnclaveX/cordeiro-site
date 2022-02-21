@@ -15,7 +15,7 @@
 <script>
 	export default {
 		props: {
-			skills: String
+			skills: Array
 		}
 	};
 </script>
