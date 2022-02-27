@@ -21,35 +21,63 @@
 
 <style lang="scss">
 	.page-title {
-		margin-top: 5px;
-		height: 90px;
+		height: auto;
 		position: relative;
-	}
 
-	.page-title > h2 {
-		height: 90px;
-		top: 2px;
-		background-color: transparent;
-		font-size: 5em;
-		font-family: "Bebas Neue", sans-serif;
-		width: 100%;
-		letter-spacing: 0.02em;
+		h2 {
+			height: auto;
+			top: 2px;
+			background-color: transparent;
+			font-size: 5em;
+			font-family: "Bebas Neue", sans-serif;
+			width: 100%;
+			letter-spacing: 0.02em;
+		}
 	}
 
 	.page-title-black {
 		color: #1d1d1d;
-	}
-
-	.page-title-black > h2 {
-		margin-left: 40px;
+		h2 {
+			margin-left: 40px;
+		}
 	}
 
 	.page-title-white {
 		color: #e0e3f4;
 		margin-right: 60px;
+		h2 {
+			text-align: right;
+		}
 	}
 
-	.page-title-white > h2 {
-		text-align: right;
+	@media (max-width: 400px) {
+		.page-title {
+			height: unset;
+			position: relative;
+
+			h2 {
+				height: 30px;
+				top: initial;
+				font-size: 3em;
+				font-family: "Bebas Neue", sans-serif;
+				width: initial;
+				margin-left: 30px;
+				letter-spacing: 0.02em;
+			}
+		}
+		
+		.page-title-black {
+			h2 {
+				margin-left: 20px;
+			}
+		}
+
+		.page-title-white {
+			margin-right: 20px;
+
+			h2 {
+				text-align: right;
+			}
+		}
 	}
 </style>

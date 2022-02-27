@@ -5,10 +5,30 @@
         "tecnologies": "VueJS/NodeJS/MongoDB/PostgreSQL/Agile/SOLID"
     },
     "profile": {
-        "myProfile": "My Profile"
+        "myProfile": "Meu Perfil",
+        "dev": "Dev",
+        "devTitle": "Um pequeno desenvolvedor",
+        "human": "Humano",
+        "humanTitle": "Ser humano",
+        "music": "Músico",
+        "musicTitle": "Algumas notas",
+        "alien": "Alien",
+        "alienTitle": "O desconhecido conhecido",
+        "readMore": "Mostrar mais",
+        "readLess": "Mostrar menos"
     },
     "skills": {
-        "mySkills": "My Skills"
+        "mySkills": "Habilidades",
+        "english": "Inglês",
+        "agile": "Ágil",
+        "problemSolving": "Resolução de Problemas",
+        "workEthic": "Ética",
+        "teamwork": "Trabalho em Equipe",
+        "communication": "Comunicação",
+        "creativity": "Criatividade",
+        "adaptability": "Adaptação",
+        "leadership": "Liderança",
+        "empathy": "Empatia"
     },
     "lifeline": {
         "myLifeline": "My Lifeline"

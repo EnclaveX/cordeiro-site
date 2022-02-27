@@ -2,7 +2,7 @@
 	<div>
 		<presentation></presentation>
 		<profile></profile>
-		<skills></skills>
+		<skill></skill>
 		<lifeline></lifeline>
 		<portifolio></portifolio>
 		<contact></contact>
@@ -11,10 +11,10 @@
 </template>
 
 <script>
-	import Presentation from "./../components/homePageMobile/Presentation";
-	import Profile from "./../components/homePageMobile/Profile";
-	import Skills from "./../components/homePageMobile/Skills";
-	import Lifeline from "./../components/homePageMobile/Lifeline";
+	import Presentation from "./../components/homePageMobile/presentation/Presentation";
+	import Profile from "./../components/homePageMobile/profile/Profile";
+	import Skill from "./../components/homePageMobile/skill/Skill";
+	import Lifeline from "./../components/homePageMobile/lifeline/Lifeline";
 	import Portifolio from "./../components/homePageMobile/Portifolio";
 	import Contact from "./../components/homePageMobile/Contact";
 	import End from "./../components/homePageMobile/End";
@@ -23,7 +23,7 @@
 		components: {
 			Presentation,
 			Profile,
-			Skills,
+			Skill,
 			Lifeline,
 			Portifolio,
 			Contact,

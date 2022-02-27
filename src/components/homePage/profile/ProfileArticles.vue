@@ -88,7 +88,7 @@
 		opacity: 0;
 	}
 
-	@media (max-height: 600px) {
+	@media (max-width: 600px) {
 		.profile-article {
 			padding: 20px;
 			h3 {

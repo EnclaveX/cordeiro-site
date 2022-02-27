@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<article>
-			<h3>Dev</h3>
-			<h4>Um pequeno desenvolvedor</h4>
+			<h3>{{$t('profile.dev')}}</h3>
+			<h4>{{$t('profile.devTitle')}}</h4>
 			<p>Como desenvolvedor, minha vida começou cedo. Sempre fui muito timido, curioso e com uma grande vontade de aprender e vivenciar a tecnologia. Tudo que envolvia essa palavra, me fascinava. Aprendi a fazer meus primeiros 'ifs' e 'switchs' criando pequenos RPG's em uns softwares antigos, aonde eu entendi a primeira vez o que era programação.</p>
 			<p>Após meu primeiro contato, eu sabia mais ou menos em que eu poderia ser bom. Envolvia matemática e estatística, eram algumas das poucas matérias que eu realmente me destacava. Nem falo por ser um bom aluno, mas é que aquele tipo de conhecimento parecia entrar na minha cabeça de um modo mais simples, tudo parecia mais fácil. Então, talvez fosse por aí o caminho.</p>
 			<p>Tive a sorte de ter um primo que me direcionasse. Ter alguém que nos dê um norte é tão necessário quanto água. Não tinha meu pai presente, minha mãe sempre teve a cabeça muito sonhadora, eu precisava ter o dissernimento por mim mesmo, era difícil, mas acho que deu certo.</p>

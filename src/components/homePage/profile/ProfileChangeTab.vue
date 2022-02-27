@@ -1,16 +1,16 @@
 <template>
 	<div class="profile-tab">
 		<div class="profile-tab-index" v-on:click="tabClick($event, 'human')">
-			<p>Human</p>
+			<p>{{$t('profile.human')}}</p>
 		</div>
 		<div class="profile-tab-index" v-on:click="tabClick($event, 'dev')">
-			<p>Dev</p>
+			<p>{{$t('profile.dev')}}</p>
 		</div>
 		<div class="profile-tab-index" v-on:click="tabClick($event, 'music')">
-			<p>Music</p>
+			<p>{{$t('profile.music')}}</p>
 		</div>
 		<div class="profile-tab-index" v-on:click="tabClick($event, 'alien')">
-			<p>Alien</p>
+			<p>{{$t('profile.alien')}}</p>
 		</div>
 	</div>
 </template>
@@ -63,16 +63,16 @@
 		background-color: #292929;
 	}
 
-	.click-effect {
+	.profile-click-effect {
 		position: absolute;
 		background: #fff;
 		transform: translate(-50%, -50%);
 		pointer-events: none;
 		border-radius: 50%;
-		animation: ripples-animation 0.8s linear;
+		animation: profile-ripples-animation 0.8s linear;
 	}
 
-	@keyframes ripples-animation {
+	@keyframes profile-ripples-animation {
 		0% {
 			width: 0px;
 			height: 0px;

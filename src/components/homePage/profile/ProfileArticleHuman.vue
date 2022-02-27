@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<article>
-			<h3>Human</h3>
-			<h4>Um ser humano melhor</h4>
+			<h3>{{$t('profile.human')}}</h3>
+			<h4>{{$t('profile.humanTitle')}}</h4>
 			<p>Nasci em uma família classe média bem baixa, em uma cidade pequena com sentimento de cidade grande, nada de novo sobre o sol. Criciúma nunca chegou a ser uma metrópole, até por isso era comum poder brincar na rua.</p>
 			<p>Tive uma mãe presente e super protetora, um pai ausente e com problemas de saúde, vivi com avós e tias muito próximos, era uma família até certo ponto comum, se for olhar para trás, isso me moldou de uma forma muito interessante.</p>
 			<p>Cresci rodeado de problemas pessoais, os quais eu não tinha muito como resolver, apenas aceitava, é difícil para uma criança a separação dos pais, mas para mim, ali estava a solução dos meus problemas.</p>

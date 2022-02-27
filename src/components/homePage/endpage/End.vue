@@ -22,7 +22,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="created-by">
+		<div class="footer-created-by">
 			<a
 				href="http://www.guilhermecordeiro.com.br"
 				target="_blank"
@@ -39,6 +39,7 @@
 <style lang="scss">
 	.footer {
 		height: 25vh;
+		width: 100vw;
 		background-color: #1d1d1d;
 		display: flex;
 		padding-top: 10px;
@@ -65,7 +66,7 @@
 			}
 		}
 
-		.created-by {
+		.footer-created-by {
 			margin: auto;
 			font-family: "Bebas Neue", sans-serif;
 

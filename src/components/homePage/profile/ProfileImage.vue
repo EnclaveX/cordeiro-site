@@ -1,13 +1,13 @@
 <template>
-	<div class="container-profile">
+	<div class="profile-container-profile">
 		<div class="profile-row" v-for="item in 7" :key="item">
-			<div class="hexagon middle" v-for="hex in 5" :key="hex">
-				<div class="hexagon-front profile-human"></div>
-				<div class="hexagon-back profile-human"></div>
+			<div class="profile-hexagon middle" v-for="hex in 5" :key="hex">
+				<div class="profile-hexagon-front profile-human"></div>
+				<div class="profile-hexagon-back profile-human"></div>
 			</div>
-			<div class="hexagon" v-if="item % 2 === 0">
-				<div class="hexagon-front profile-human"></div>
-				<div class="hexagon-back profile-human"></div>
+			<div class="profile-hexagon" v-if="item % 2 === 0">
+				<div class="profile-hexagon-front profile-human"></div>
+				<div class="profile-hexagon-back profile-human"></div>
 			</div>
 		</div>
 	</div>
@@ -18,17 +18,7 @@
 </script>
 
 <style lang="scss">
-	.content-profile {
-		margin-left: 5%;
-		display: flex;
-		flex-direction: row;
-		width: 90%;
-		background-color: #ffffff55;
-		box-shadow: 10px 10px 40px 0px #00000055;
-		border-radius: 2px;
-	}
-
-	.container-profile {
+	.profile-container-profile {
 		background-color: #1d1d1d;
 		min-width: 710px;
 		height: 710px;
@@ -68,7 +58,7 @@
 			height: 20%;
 			display: flex;
 			width: 100% + (20% * $odd-even-aux);
-			.hexagon {
+			.profile-hexagon {
 				background-size: 710px;
 				position: relative;
 				left: -8.35% * $odd-even-aux;
@@ -81,8 +71,8 @@
 				height: 100%;
 			}
 
-			.hexagon-front,
-			.hexagon-back {
+			.profile-hexagon-front,
+			.profile-hexagon-back {
 				width: 100%;
 				height: 100%;
 				overflow: hidden;
@@ -90,14 +80,14 @@
 				position: absolute;
 				transition: transform 0.6s linear;
 			}
-			.hexagon-front {
+			.profile-hexagon-front {
 				transform: rotateY(0deg);
 			}
-			.hexagon-back {
+			.profile-hexagon-back {
 				transform: rotateY(180deg);
 			}
 
-			.empty-hexagon.hexagon-front {
+			.profile-empty-hexagon.profile-hexagon-front {
 				transform: rotateY(-180deg);
 			}
 		}
@@ -114,9 +104,9 @@
 
 		.profile-row:nth-child(#{$i}) {
 			@for $l from 1 through $total-itens {
-				.hexagon:nth-child(#{$l}) {
-					.hexagon-front,
-					.hexagon-back {
+				.profile-hexagon:nth-child(#{$l}) {
+					.profile-hexagon-front,
+					.profile-hexagon-back {
 						background-position: top
 							calc(#{$initial-value-top-hexagon})
 							left
@@ -135,11 +125,11 @@
 	}
 
 	@media (max-height: 800px) {
-		.content-profile {
+		.profile-content-profile {
 			height: 550px;
 		}
 
-		.container-profile {
+		.profile-container-profile {
 			min-width: 550px;
 			height: 550px;
 		}
@@ -162,11 +152,11 @@
 	}
 
 	@media (max-height: 600px) {
-		.content-profile {
+		.profile-content-profile {
 			height: 450px;
 		}
 
-		.container-profile {
+		.profile-container-profile {
 			min-width: 300px;
 			height: 450px;
 		}

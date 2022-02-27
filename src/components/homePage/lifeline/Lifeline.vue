@@ -15,7 +15,7 @@
 	import LifelineScrollOverButton from "./LifelineScrollOverButton";
 	import LifelineBar from "./LifelineBar"
 	import LifelineDescription from './LifelineDescription'
-	import lifelineYearsData from './lifelineYearsData.json'
+	import lifelineYearsData from './../../../data/lifelineYearsData.json'
 
 	export default {
 		components: {
@@ -44,7 +44,7 @@
 <style lang="scss">
 	.lifeline {
 		position: relative;
-		height: 60vh;
+		height: auto;
 		width: 100vw;
 		display: flex;
 		flex-direction: column;
@@ -55,6 +55,7 @@
 		width: 95%;
 		margin-left: auto;
 		margin-right: auto;
+		margin-bottom: 1%;
 		display: grid;
 		grid-template-columns: 40px 1fr 40px;
 		grid-template-rows: 40px 60px 30px 150px;
@@ -64,7 +65,7 @@
 		box-shadow: 10px 10px 40px -10px #00000055;
 	}
 	
-	@media (max-height: 600px) {
+	@media (max-width: 600px) {
 		.lifeline {
 			height: 70vh;
 		}

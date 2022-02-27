@@ -1,10 +1,10 @@
 <template>
 	<div
-		:class="[lifelinePreviousNextYearsClass, 'lifeline-scrolling-years']"
+		:class="[lifelinePreviousNextYearsClass, 'lifeline-m-scrolling-years']"
 		@mouseover="scroll(direction)"
 		@mouseleave="stopScroll()"
 	>
-		<font-awesome-icon :icon="['fas', icon]" class="icon alt lifeline-scroll-icon"/>
+		<font-awesome-icon :icon="['fas', icon]" class="icon alt lifeline-m-scroll-icon"/>
 	</div>
 </template>
 
@@ -15,26 +15,17 @@
 		},
 		data: () => {
 			return {
-				lifelinePreviousNextYearsClass: "lifeline-previous-years",
+				lifelinePreviousNextYearsClass: "lifeline-m-previous-years",
 				direction: "R",
 				icon: "angle-double-right"
 			};
-		},
-		mounted() {
-			if (this.btnType === "R") {
-				(this.lifelinePreviousNextYearsClass = "lifeline-previous-years"), (this.direction = "R");
-				this.icon = "angle-double-right";
-			} else {
-				(this.lifelinePreviousNextYearsClass = "lifeline-next-years"), (this.direction = "L");
-				this.icon = "angle-double-left";
-			}
 		},
 		methods: {
 			stopScroll: function() {
 				clearInterval(this.scrollingYears);
 			},
 			scroll: function(dir) {
-				const el = document.querySelector(".lifeline-container");
+				const el = document.querySelector(".lifeline-m-container");
 
 				clearInterval(this.scrollingYears);
 
@@ -48,31 +39,43 @@
 					}
 				}, 1);
 			}
+		},
+		mounted() {
+			if (this.btnType === "R") {
+				(this.lifelinePreviousNextYearsClass = "lifeline-m-previous-years"),
+					(this.direction = "R");
+				this.icon = "angle-double-right";
+			} else {
+				(this.lifelinePreviousNextYearsClass = "lifeline-m-next-years"),
+					(this.direction = "L");
+				this.icon = "angle-double-left";
+			}
 		}
 	};
 </script>
 
-<style>
-	.lifeline-scroll-icon {
+<style lang="scss">
+	.lifeline-m-scroll-icon {
 		font-size: 2em;
 	}
 
-	.lifeline-scrolling-years {
+	.lifeline-m-scrolling-years {
 		grid-row: 1 / span 3;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		transition: all 0.3s ease-in-out;
 	}
-	.lifeline-scrolling-years:hover {
+
+	.lifeline-m-scrolling-years:hover {
 		background-color: #1d1d1d55;
 	}
 
-	.lifeline-previous-years {
+	.lifeline-m-previous-years {
 		grid-column: 3;
 	}
 
-	.lifeline-next-years {
+	.lifeline-m-next-years {
 		grid-column: 1;
 	}
 </style>

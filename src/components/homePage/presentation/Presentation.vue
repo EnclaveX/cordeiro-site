@@ -6,39 +6,40 @@
 					<h1>{{$t('presentation.presentation')}}</h1>
 					<h2 class="presentation-sub-title">{{$t('presentation.title')}}</h2>
 					<p class="presentation-note">{{$t('presentation.tecnologies')}}</p>
-					<div class="icons-social-networks">
+					<div class="presentation-icons-social-networks">
 						<a href="https://www.instagram.com/guilhermecordeiro93/" target="_blank">
-							<div class="icon-container">
-								<font-awesome-icon :icon="['fab', 'instagram']" class="icon alt scroll-icon"/>
+							<div class="presentation-icon-container">
+								<font-awesome-icon :icon="['fab', 'instagram']" class="presentation-icon"/>
 							</div>
 						</a>
 						<a href="https://github.com/EnclaveX" target="_blank">
-							<div class="icon-container">
-								<font-awesome-icon :icon="['fab', 'github']" class="icon alt scroll-icon"/>
+							<div class="presentation-icon-container">
+								<font-awesome-icon :icon="['fab', 'github']" class="presentation-icon"/>
 							</div>
 						</a>
 						<a href="https://www.linkedin.com/in/guilhermecordeiro93/" target="_blank">
-							<div class="icon-container">
-								<font-awesome-icon :icon="['fab', 'linkedin']" class="icon alt scroll-icon"/>
+							<div class="presentation-icon-container">
+								<font-awesome-icon :icon="['fab', 'linkedin']" class="presentation-icon"/>
 							</div>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="picture-presentation-container">
-			<div class="picture-presentation"></div>
+		<div class="presentation-picture-container">
+			<div class="presentation-picture"></div>
 		</div>
 	</div>
 </template>
 
 <script>
+
 </script>
 
 <style lang="scss">
 	.presentation {
 		height: 100vh;
-		width: 100%;
+		width: 100vw;
 		font-family: "Bebas Neue", sans-serif;
 		display: grid;
 		grid-template-columns: 63% 37%;
@@ -88,35 +89,36 @@
 				}
 			}
 		}
+	}
 
-		.icons-social-networks {
-			display: flex;
-			flex-direction: row;
+	.presentation-icons-social-networks {
+		display: flex;
+		flex-direction: row;
+		.presentation-icon-container {
 			height: 100px;
-
-			.icon-container {
-				font-size: 1.5rem;
+			width: 70px;
+			margin-top: 10px;
+			.presentation-icon {
+				font-size: 3rem;
 				color: #e0e3f4;
-				margin: 10px;
-				margin-top: 30px;
-				height: 50px;
-				width: 50px;
-				transition: font-size ease .1s;
+				margin: auto;
+				transition: font-size ease 0.3s, color ease 0.3s;
 			}
 
-			.icon-container:hover {
-				font-size: 1.6rem;
+			.presentation-icon:hover {
+				font-size: 3.2rem;
+				color: #fff;
 			}
 		}
 	}
 
-	.picture-presentation-container {
+	.presentation-picture-container {
 		width: 100%;
-		.picture-presentation {
+		grid-column-start: 2;
+		.presentation-picture {
 			height: 25vw;
 			width: 25vw;
 			background-color: #e0e3f4;
-			grid-column-start: 2;
 			border-radius: 50%;
 			max-width: 800px;
 			max-height: 800px;
@@ -124,11 +126,10 @@
 			background-image: url("./../../../assets/perfil-imgs/me.jpg");
 			background-position: 0%;
 			background-size: cover;
-			box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
 		}
 	}
 
-	@media (max-height: 700px) {
+	@media (max-width: 700px) {
 		.presentation {
 			grid-template-columns: 55% 45%;
 			grid-template-rows: 100%;

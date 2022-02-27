@@ -1,7 +1,7 @@
 <template>
 	<div id="skills" class="skills">
 		<PageTitle title="skills.mySkills" type="white"></PageTitle>
-		<div ref="skillList" class="skills-list">
+		<div ref="skillList" class="skill-list">
 			<ColumnSkills :skills="hardSkills"></ColumnSkills>
 			<ColumnSkills :skills="softSkills"></ColumnSkills>
 		</div>
@@ -26,6 +26,35 @@
 		mounted() {
 			this.fullingProgressBarSkill();
 		},
+		created() {
+			this.hardSkills = [
+				{ name: "CSS", id: "sk-css", percent: 80 },
+				{ name: "HTML", id: "sk-html", percent: 80 },
+				{ name: "JavaScript", id: "sk-js", percent: 75 },
+				{ name: "TypeScript", id: "sk-ts", percent: 65 },
+				{ name: "VueJS", id: "sk-vue", percent: 65 },
+				{ name: "NodeJS", id: "sk-node", percent: 65 },
+				{ name: "DDD", id: "sk-ddd", percent: 75 },
+				{ name: "TDD", id: "sk-tdd", percent: 75 },
+				{ name: "SOLID", id: "sk-sd", percent: 75 },
+				{ name: "PowerBuilder", id: "sk-pb", percent: 95 },
+				{ name: "PostgreSQL", id: "sk-pg", percent: 80 },
+				{ name: "MongoDB", id: "sk-mdb", percent: 65 }
+			];
+
+			this.softSkills = [
+				{ name: this.$t("skills.english"), id: "sk-eng", percent: 60 },
+				{ name: this.$t("skills.agile"), id: "sk-ag", percent: 80 },
+				{ name: this.$t("skills.problemSolving"), id: "sk-ps", percent: 90 },
+				{ name: this.$t("skills.workEthic"), id: "sk-we", percent: 100 },
+				{ name: this.$t("skills.teamwork"), id: "sk-tw", percent: 95 },
+				{ name: this.$t("skills.communication"), id: "sk-com", percent: 90 },
+				{ name: this.$t("skills.creativity"), id: "sk-crv", percent: 90 },
+				{ name: this.$t("skills.adaptability"), id: "sk-ada", percent: 100 },
+				{ name: this.$t("skills.leadership"), id: "sk-lead", percent: 80 },
+				{ name: this.$t("skills.empathy"), id: "sk-epty", percent: 100 }
+			];
+		},
 		methods: {
 			fullingProgressBarSkill: () => {
 				const bars = Array.from(document.querySelectorAll(".skill-bar"));
@@ -37,32 +66,8 @@
 		},
 		data: () => {
 			return {
-				hardSkills: [
-					{ name: "CSS", id: "sk-css", percent: 80 },
-					{ name: "HTML", id: "sk-html", percent: 80 },
-					{ name: "JavaScript", id: "sk-js", percent: 75 },
-					{ name: "TypeScript", id: "sk-ts", percent: 65 },
-					{ name: "VueJS", id: "sk-vue", percent: 65 },
-					{ name: "NodeJS", id: "sk-node", percent: 65 },
-					{ name: "DDD", id: "sk-ddd", percent: 75 },
-					{ name: "TDD", id: "sk-tdd", percent: 75 },
-					{ name: "SOLID", id: "sk-sd", percent: 75 },
-					{ name: "PowerBuilder", id: "sk-pb", percent: 95 },
-					{ name: "PostgreSQL", id: "sk-pg", percent: 80 },
-					{ name: "MongoDB", id: "sk-mdb", percent: 65 }
-				],
-				softSkills: [
-					{ name: "English", id: "sk-eng", percent: 60 },
-					{ name: "Agile", id: "sk-ag", percent: 80 },
-					{ name: "Problem-Solving", id: "sk-ps", percent: 90 },
-					{ name: "Work-Ethic", id: "sk-we", percent: 100 },
-					{ name: "Teamwork", id: "sk-tw", percent: 95 },
-					{ name: "Communication", id: "sk-com", percent: 90 },
-					{ name: "Creativity", id: "sk-crv", percent: 90 },
-					{ name: "Adaptability", id: "sk-ada", percent: 100 },
-					{ name: "Leadership", id: "sk-lead", percent: 80 },
-					{ name: "Empathy", id: "sk-epty", percent: 100 }
-				]
+				hardSkills: [],
+				softSkills: []
 			};
 		}
 	};
@@ -94,9 +99,9 @@
 		}
 	}
 
-	.skills-list {
+	.skill-list {
 		border-radius: 2px;
-		height: 70vh;
+		height: 80%;
 		background: linear-gradient(
 			121deg,
 			rgba(50, 50, 50, 0.8920518549216562) 12%,
@@ -110,10 +115,29 @@
 		display: flex;
 		justify-content: flex-start;
 		margin: 0 4%;
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			width: 50%;
+
+			li {
+				font-family: "Bebas Neue", sans-serif;
+				margin-left: 40px;
+				font-size: 2.2em;
+				list-style: none;
+				display: flex;
+
+				p {
+					font-size: 0.8em;
+				}
+			}
+		}
 	}
 
 	@media (max-height: 600px) {
-		.skills-list {
+		.skill-list {
 			ul {
 				li {
 					p {

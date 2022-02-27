@@ -1,7 +1,7 @@
 <template>
 	<div id="profile" class="profile">
 		<PageTitle title="profile.myProfile" type="black"></PageTitle>
-		<div ref="profileTab" class="content-profile">
+		<div ref="profileTab" class="profile-content-profile">
 			<ProfileChangeTab></ProfileChangeTab>
 			<ProfileImage></ProfileImage>
 			<ProfileArticles :profileType="profileType"></ProfileArticles>
@@ -36,7 +36,7 @@
 				ripples.style.left = event.offsetX + "px";
 				ripples.style.top = event.offsetY + "px";
 
-				ripples.classList.add("click-effect");
+				ripples.classList.add("profile-click-effect");
 
 				event.target.appendChild(ripples);
 
@@ -46,7 +46,7 @@
 			},
 			changeProfile: async function(event, type) {
 				const hexagonList = Array.from(
-					document.querySelectorAll(".hexagon-front")
+					document.querySelectorAll(".profile-hexagon-front")
 				);
 				const randomHexagonList = hexagonList.sort(() => Math.random() - 0.5);
 
@@ -54,7 +54,7 @@
 
 				await randomHexagonList.forEach((e, index, total) => {
 					setTimeout(() => {
-						e.classList.add("empty-hexagon");
+						e.classList.add("profile-empty-hexagon");
 					}, index * 10);
 
 					setTimeout(() => {
@@ -66,7 +66,7 @@
 					}, 850);
 
 					setTimeout(() => {
-						e.classList.remove("empty-hexagon");
+						e.classList.remove("profile-empty-hexagon");
 						if (index + 1 === total.length) {
 							this.profileType = type;
 							const profileArticle = document.querySelector(".profile-article");
@@ -86,5 +86,14 @@
 		display: flex;
 		flex-direction: column;
 		background-color: #e0e3f4;
+	}
+	.profile-content-profile {
+		margin-left: 5%;
+		display: flex;
+		flex-direction: row;
+		width: 90%;
+		background-color: #ffffff55;
+		box-shadow: 10px 10px 40px 0px #00000055;
+		border-radius: 2px;
 	}
 </style>

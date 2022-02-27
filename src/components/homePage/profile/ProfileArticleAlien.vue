@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<article>
-			<h3>Alien</h3>
-			<h4>Um estranho comum</h4>
+			<h3>{{$t('profile.alien')}}</h3>
+			<h4>{{$t('profile.alienTitle')}}</h4>
 			<p>Dentre todos os meus estudos recentes, o que me fascina além o desenvolvimento, são os estudos de astronomia.</p>
 			<p>Levo com outro hobby poder estudar e entender as coisas que acontecem ao nosso redor no universo.</p>
 			<p>Documentário, atrás de documentário. Podcast atrás de podcast. São coisas que vão além da nossa compreensão, isso me deixa muito intrigado.</p>

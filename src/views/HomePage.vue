@@ -13,7 +13,7 @@
 <script>
 	import Presentation from "./../components/homePage/presentation/Presentation";
 	import Profile from "./../components/homePage/profile/Profile";
-	import Skills from "./../components/homePage/skills/Skills";
+	import Skills from "./../components/homePage/skill/Skill";
 	import Lifeline from "./../components/homePage/lifeline/Lifeline";
 	import Portfolio from "./../components/homePage/portfolio/Portfolio";
 	import Contact from "./../components/homePage/contact/Contact";

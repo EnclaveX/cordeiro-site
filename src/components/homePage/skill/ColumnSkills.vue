@@ -23,6 +23,7 @@
 <style lang="scss">
 	.skill-name {
 		color: #e0e3f4;
+		width: 50%;
 	}
 
 	.skill-percent {
@@ -30,10 +31,11 @@
 	}
 
 	.skill-content {
-		width: 60%;
+		width: 55%;
 		height: 100%;
 		margin-top: auto;
 		margin-bottom: auto;
+		margin-right: 10px;
 		display: flex;
 		flex-direction: column;
 
@@ -59,28 +61,6 @@
 		.skill-percent {
 			align-self: flex-end;
 			font-size: 0.5em;
-		}
-	}
-
-	.skills-list {
-		ul {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-evenly;
-			width: 50%;
-
-			li {
-				font-family: "Bebas Neue", sans-serif;
-				margin-left: 40px;
-				font-size: 2.2em;
-				list-style: none;
-				display: flex;
-
-				p {
-					width: 36%;
-					font-size: 0.8em;
-				}
-			}
 		}
 	}
 </style>
