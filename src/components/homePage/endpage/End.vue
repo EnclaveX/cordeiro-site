@@ -27,7 +27,11 @@
 				href="http://www.guilhermecordeiro.com.br"
 				target="_blank"
 				rel="noopener noreferrer"
-			>Created By Guilherme Cordeiro</a>
+			>{{$t("endpage.createdBy")}} Guilherme Cordeiro</a>
+			<div class="endpage-m-partners">
+				<p>{{$t("endpage.partners")}}</p>
+				<a target="_blank" href="https://bgjar.com">BGJar SVG Backgrounds</a>
+			</div>
 		</div>
 	</div>
 </template>
@@ -66,17 +70,23 @@
 			}
 		}
 
+		.endpage-m-partners {
+			margin-top: 30px;
+		}
+
 		.endpage-created-by {
 			margin: auto;
 			font-family: "Bebas Neue", sans-serif;
 
+			p {
+				color: #e0e3f4;
+			}
+
 			a {
+				font-size: 0.8em;
 				text-decoration: none;
 				color: #e0e3f4;
 				transition: font-size 0.3s ease;
-			}
-			a:hover {
-				font-size: 1.1em;
 			}
 		}
 	}

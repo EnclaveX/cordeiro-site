@@ -28,6 +28,10 @@
 				target="_blank"
 				rel="noopener noreferrer"
 			>{{$t("endpage.createdBy")}} Guilherme Cordeiro</a>
+			<div class="endpage-m-partners">
+				<p>{{$t("endpage.partners")}}</p>
+				<a target="_blank" href="https://bgjar.com">BGJar SVG Backgrounds</a>
+			</div>
 		</div>
 	</div>
 </template>
@@ -63,11 +67,20 @@
 				}
 			}
 
+			.endpage-m-partners {
+				margin-top: 30px;
+			}
+
 			.endpage-m-created-by {
 				margin: auto;
 				font-family: "Bebas Neue", sans-serif;
 
+				p {
+					color: #e0e3f4;
+				}
+
 				a {
+					font-size: .8em;
 					text-decoration: none;
 					color: #e0e3f4;
 					transition: font-size 0.3s ease;

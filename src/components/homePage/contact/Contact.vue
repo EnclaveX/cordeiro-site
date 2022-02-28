@@ -59,7 +59,7 @@
 		}
 
 		.contact-icons-social-networks {
-			height: 100px;
+			height: auto;
 			display: flex;
 			flex-direction: row;
 
@@ -75,13 +75,13 @@
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					font-size: 1rem;
+					font-size: 2rem;
 					transition: all 0.25s ease;
 				}
 
 				.contact-icon-container:hover {
 					box-shadow: 5px 5px 15px 5px #00000055;
-					font-size: 1.1rem;
+					font-size: 2.1rem;
 				}
 			}
 		}
@@ -107,7 +107,7 @@
 
 	.contacts {
 		padding: 20px;
-		height: 30vh;
+		height: auto;
 		width: 96%;
 		margin: 0% auto;
 		border-radius: 2px;
