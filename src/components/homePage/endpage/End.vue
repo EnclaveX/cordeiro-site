@@ -1,6 +1,6 @@
 <template>
-	<div class="footer">
-		<div class="footer-menu">
+	<div class="endpage-footer">
+		<div class="endpage-footer-menu">
 			<ul>
 				<li>
 					<a href="#home">Home</a>
@@ -22,7 +22,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="footer-created-by">
+		<div class="endpage-created-by">
 			<a
 				href="http://www.guilhermecordeiro.com.br"
 				target="_blank"
@@ -37,7 +37,7 @@
 </script>
 
 <style lang="scss">
-	.footer {
+	.endpage-footer {
 		height: 25vh;
 		width: 100vw;
 		background-color: #1d1d1d;
@@ -45,7 +45,7 @@
 		padding-top: 10px;
 		padding-left: 10px;
 
-		.footer-menu {
+		.endpage-footer-menu {
 			margin: auto 0;
 			list-style: none;
 			width: 100px;
@@ -66,7 +66,7 @@
 			}
 		}
 
-		.footer-created-by {
+		.endpage-created-by {
 			margin: auto;
 			font-family: "Bebas Neue", sans-serif;
 

@@ -3,7 +3,7 @@
 		<PageTitle title="contact.myContact" type="black"></PageTitle>
 		<div class="contacts">
 			<div class="contact-address">
-				<h6>Send me an e-mail...</h6>
+				<h6>{{$t("contact.sendMeEmail")}}</h6>
 				<h2>
 					<a href="mailto:guilherme.r.cordeiro93@gmail.com">guilherme.r.cordeiro93@gmail.com</a>
 				</h2>
@@ -11,7 +11,7 @@
 			<br>
 			<br>
 			<div class="contact-social-networks">
-				<h6>Find me at...</h6>
+				<h6>{{$t("contact.findMeAt")}}</h6>
 				<div class="contact-icons-social-networks">
 					<a href="https://www.instagram.com/guilhermecordeiro93/" target="_blank">
 						<div class="contact-icon-container">
@@ -45,9 +45,10 @@
 
 <style lang="scss">
 	.contact {
-		height: 42vh;
+		height: auto;
 		width: 100vw;
 		background-color: #e0e3f4;
+		padding-bottom: 10px; 
 	}
 
 	.contact-social-networks {

@@ -1,33 +1,33 @@
 <template>
-	<div class="footer">
-		<div class="footer-menu">
+	<div class="endpage-m-footer">
+		<div class="endpage-m-footer-menu">
 			<ul>
 				<li>
-					<a href="#home">Home</a>
+					<a href="#home">{{$t("menu.home")}}</a>
 				</li>
 				<li>
-					<a href="#profile">Profile</a>
+					<a href="#profile">{{$t("menu.profile")}}</a>
 				</li>
 				<li>
-					<a href="#skills">Skills</a>
+					<a href="#skills">{{$t("menu.skills")}}</a>
 				</li>
 				<li>
-					<a href="#lifeline">Lifeline</a>
+					<a href="#lifeline">{{$t("menu.lifeline")}}</a>
 				</li>
 				<li>
-					<a href="#portifolio">Portifolio</a>
+					<a href="#portfolio">{{$t("menu.portfolio")}}</a>
 				</li>
 				<li>
-					<a href="#contact">Contact</a>
+					<a href="#contact">{{$t("menu.contact")}}</a>
 				</li>
 			</ul>
 		</div>
-		<div class="created-by">
+		<div class="endpage-m-created-by">
 			<a
 				href="http://www.guilhermecordeiro.com.br"
 				target="_blank"
 				rel="noopener noreferrer"
-			>Created By Guilherme Cordeiro</a>
+			>{{$t("endpage.createdBy")}} Guilherme Cordeiro</a>
 		</div>
 	</div>
 </template>
@@ -38,17 +38,18 @@
 
 <style lang="scss">
 	@media (max-width: 400px) {
-		.footer {
+		.endpage-m-footer {
 			height: 25vh;
 			background-color: #1d1d1d;
 			display: flex;
 			padding-top: 10px;
 			padding-left: 10px;
 
-			.footer-menu {
+			.endpage-m-footer-menu {
 				margin: auto 0;
 				list-style: none;
 				width: 100px;
+
 				li > a {
 					text-decoration: none;
 					color: #e0e3f4;
@@ -62,7 +63,7 @@
 				}
 			}
 
-			.created-by {
+			.endpage-m-created-by {
 				margin: auto;
 				font-family: "Bebas Neue", sans-serif;
 

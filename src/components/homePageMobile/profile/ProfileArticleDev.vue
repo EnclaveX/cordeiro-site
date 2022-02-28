@@ -19,7 +19,7 @@
 					class="profile-m-read-more"
 					v-on:click="readMore($event)"
 					data-read-more-sit="close"
-				>Read More</p>
+				>{{$t('profile.readMore')}}</p>
 			</div>
 		</article>
 	</div>

@@ -4,7 +4,7 @@
 		<profile></profile>
 		<skill></skill>
 		<lifeline></lifeline>
-		<portifolio></portifolio>
+		<portfolio></portfolio>
 		<contact></contact>
 		<end></end>
 	</div>
@@ -15,9 +15,9 @@
 	import Profile from "./../components/homePageMobile/profile/Profile";
 	import Skill from "./../components/homePageMobile/skill/Skill";
 	import Lifeline from "./../components/homePageMobile/lifeline/Lifeline";
-	import Portifolio from "./../components/homePageMobile/Portifolio";
-	import Contact from "./../components/homePageMobile/Contact";
-	import End from "./../components/homePageMobile/End";
+	import Portfolio from "./../components/homePageMobile/portfolio/Portfolio";
+	import Contact from "./../components/homePageMobile/contact/Contact";
+	import End from "./../components/homePageMobile/endpage/End";
 
 	export default {
 		components: {
@@ -25,7 +25,7 @@
 			Profile,
 			Skill,
 			Lifeline,
-			Portifolio,
+			Portfolio,
 			Contact,
 			End
 		},

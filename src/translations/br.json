@@ -1,8 +1,8 @@
 {
     "presentation": {
-        "presentation": "Hello, I'm Guilherme Cordeiro.",
-        "title": "Software Analyst && Fullstack Javascript Developer",
-        "tecnologies": "VueJS/NodeJS/MongoDB/PostgreSQL/Agile/SOLID"
+        "presentation": "Olá, sou Guilherme Cordeiro.",
+        "title": "Analista de software && Desenvolvedor Javascript Fullstack",
+        "tecnologies": "VueJS/ NodeJS/ MongoDB/ PostgreSQL/ Agile/ SOLID"
     },
     "profile": {
         "myProfile": "Meu Perfil",
@@ -34,6 +34,22 @@
         "myLifeline": "My Lifeline"
     },
     "portfolio": {
-        "myPortfolio": "My Portfolio"
+        "myPortfolio": "Portfólio"
+    },
+    "contact": {
+        "myContact": "Meus Contatos",
+        "sendMeEmail": "Me envie um e-mail",
+        "findMeAt": "Me encontre aqui"
+    },
+    "endpage": {
+        "createdBy": "Criado por"
+    },
+    "menu": {
+        "home": "Início",
+        "profile": "Perfil",
+        "skills": "Habilidades",
+        "lifeline": "Linha do Tempo",
+        "portfolio": "Portfólio",
+        "contact": "Contatos"
     }
 }

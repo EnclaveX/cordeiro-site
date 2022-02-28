@@ -37,6 +37,19 @@
         "myPortfolio": "My Portfolio"
     },
     "contact": {
-        "myContact": "My Contact"
+        "myContact": "My Contact",
+        "sendMeEmail": "Send me an e-mail",
+        "findMeAt": "Find me at"
+    },
+    "endpage": {
+        "createdBy": "Created by"
+    },
+    "menu": {
+        "home": "Home",
+        "profile": "Profile",
+        "skills": "Skills",
+        "lifeline": "Lifeline",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
     }
 }

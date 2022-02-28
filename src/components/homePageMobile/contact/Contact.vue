@@ -1,27 +1,23 @@
 <template>
-	<div id="contact" class="contact">
-		<div class="my-contact">
-			<h2>{{$t('myContact')}}</h2>
-		</div>
-		<div class="contacts">
-			<div class="contact-address">
-				<h6>Send me an e-mail...</h6>
+	<div id="contact" class="contact-m">
+		<PageTitle title="contact.myContact" type="black"></PageTitle>
+		<div class="contacts-m">
+			<div class="contact-m-address">
+				<h6>{{$t("contact.sendMeEmail")}}</h6>
 				<h2>
 					<a href="mailto:guilherme.r.cordeiro93@gmail.com">guilherme.r.cordeiro93@gmail.com</a>
 				</h2>
 			</div>
-			<br>
-			<br>
-			<div class="social-networks">
-				<h6>Find me at...</h6>
-				<div class="icons-social-networks">
+			<div class="contact-m-social-networks">
+				<h6>{{$t("contact.findMeAt")}}</h6>
+				<div class="contact-m-icons-social-networks">
 					<a href="https://www.instagram.com/guilhermecordeiro93/" target="_blank">
-						<div class="icon-container">
+						<div class="contact-m-icon-container">
 							<font-awesome-icon :icon="['fab', 'instagram']" class="icon alt scroll-icon"/>
 						</div>
 					</a>
 					<a href="https://github.com/EnclaveX" target="_blank">
-						<div class="icon-container">
+						<div class="contact-m-icon-container">
 							<font-awesome-icon :icon="['fab', 'github']" class="icon alt scroll-icon"/>
 						</div>
 					</a>
@@ -32,24 +28,30 @@
 </template>
 
 <script>
-	export default {};
+	import PageTitle from "./../../general/PageTitle";
+	export default {
+		components: {
+			PageTitle
+		}
+	};
 </script>
 
 <style lang="scss">
 	@media (max-width: 400px) {
-		.contact {
-			height: 40vh;
+		.contact-m {
+			height: auto;
 			background-color: #e0e3f4;
+			padding-bottom: 10px
 		}
 
-		.social-networks {
+		.contact-m-social-networks {
 			margin: auto;
 
 			h6 {
 				width: 100%;
 			}
 
-			.icons-social-networks {
+			.contact-m-icons-social-networks {
 				height: 30px;
 				display: flex;
 				flex-direction: row;
@@ -58,7 +60,7 @@
 					color: #1d1d1d;
 					text-decoration: none;
 
-					.icon-container {
+					.contact-m-icon-container {
 						width: 30px;
 						height: 30px;
 						border-radius: 50%;
@@ -66,43 +68,23 @@
 						display: flex;
 						justify-content: center;
 						align-items: center;
-						font-size: 1rem;
+						font-size: 2rem;
 						transition: all 0.25s ease;
 					}
 
-					.icon-container:hover {
-						box-shadow: unset;
-						font-size: unset;
+					.contact-m-icon-container:hover {
+						font-size: 2.2rem;
 					}
 				}
 			}
 		}
 
-		.my-contact {
-			margin-top: initial;
-			margin-bottom: initial;
-			margin-left: 10px;
-			height: unset;
-			position: relative;
-			color: #1d1d1d;
-
-			h2 {
-				height: 50px;
-				top: initial;
-				font-size: 3em;
-				font-family: "Bebas Neue", sans-serif;
-				width: initial;
-				margin-left: 1%;
-				letter-spacing: 0.02em;
-			}
-		}
-
-		.contact-address {
+		.contact-m-address {
 			height: 60px;
 		}
 
-		.contact h6,
-		.contact h2 a {
+		.contact-m h6,
+		.contact-m h2 a {
 			font-family: "Bebas Neue", sans-serif;
 			color: #1d1d1d;
 			text-decoration: none;
@@ -111,15 +93,15 @@
 			transition: all 0.25s ease;
 		}
 
-		.contact h2 a:hover {
+		.contact-m h2 a:hover {
 			font-size: unset;
 		}
 
-		.contacts {
-			padding:20px;
-			height: 30vh;
+		.contacts-m {
+			padding: 20px;
+			height: auto;
 			width: 95%;
-			margin: 10px auto;
+			margin: 30px auto 0 auto;
 			border-radius: 2px;
 			box-shadow: 10px 10px 40px -20px #00000055;
 			background-color: #ffffffaa;
