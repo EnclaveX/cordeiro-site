@@ -23,6 +23,16 @@
 							</div>
 						</a>
 					</div>
+					<div class="presentation-select-locale">
+						<div class="presentation-locale">
+							<img src="./../../../assets/locale-flags/britain-flag.svg" alt="Britain Flag">
+							<p>English</p>
+						</div>
+						<div class="presentation-locale">
+							<img src="./../../../assets/locale-flags/brazil-flag.svg" alt="Brazil Flag">
+							<p>Português</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -33,7 +43,6 @@
 </template>
 
 <script>
-
 </script>
 
 <style lang="scss">
@@ -89,6 +98,31 @@
 				}
 			}
 		}
+
+		.presentation-select-locale {
+			font-size: 0.9rem;
+
+			img {
+				width: 25px;
+				margin: auto 10px;
+			}
+
+			.presentation-locale {
+				display: flex;
+				margin-bottom: 10px;
+				height: 30px;
+				transition: all 0.1s ease;
+
+				p {
+					margin: auto 0;
+					cursor: pointer;
+				}
+			}
+
+			.presentation-locale:hover {
+				font-size: 1.1rem;
+			}
+		}
 	}
 
 	.presentation-icons-social-networks {
@@ -102,7 +136,7 @@
 				font-size: 3rem;
 				color: #e0e3f4;
 				margin: auto;
-				transition: font-size ease 0.3s, color ease 0.3s;
+				transition: font-size ease 0.1s, color ease 0.3s;
 			}
 
 			.presentation-icon:hover {
